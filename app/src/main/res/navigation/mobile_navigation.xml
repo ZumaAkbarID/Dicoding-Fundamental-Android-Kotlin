@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@id/navigation_home">
+
+    <fragment
+        android:id="@+id/navigation_home"
+        android:name="com.rwa.submissionakhirdicodingevent.ui.home.HomeFragment"
+        android:label="@string/title_home"
+        tools:layout="@layout/fragment_home">
+        <action
+            android:id="@+id/action_navigation_home_to_detailFragment2"
+            app:destination="@id/detailFragment2" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/navigation_finish"
+        android:name="com.rwa.submissionakhirdicodingevent.ui.finish.FinishFragment"
+        android:label="@string/title_finish"
+        tools:layout="@layout/fragment_finish" >
+        <action
+            android:id="@+id/action_navigation_finish_to_detailFragment2"
+            app:destination="@id/detailFragment2" />
+    </fragment>
+    <fragment
+        android:id="@+id/detailFragment2"
+        android:name="com.rwa.submissionakhirdicodingevent.ui.detail.DetailFragment"
+        android:label="fragment_detail"
+        tools:layout="@layout/fragment_detail" >
+        <argument
+            android:name="eventId"
+            app:argType="integer"
+            android:defaultValue="0" />
+        <argument
+            android:name="title"
+            app:argType="string"
+            android:defaultValue="Detail" />
+        <argument
+            android:name="showRegister"
+            app:argType="boolean"
+            android:defaultValue="true" />
+    </fragment>
+    <fragment
+        android:id="@+id/navigation_favorite"
+        android:name="com.rwa.submissionakhirdicodingevent.ui.favorite.FavoriteFragment"
+        android:label="fragment_favorite"
+        tools:layout="@layout/fragment_favorite" >
+        <action
+            android:id="@+id/action_favoriteFragment_to_detailFragment2"
+            app:destination="@id/detailFragment2" />
+    </fragment>
+    <fragment
+        android:id="@+id/navigation_setting"
+        android:name="com.rwa.submissionakhirdicodingevent.ui.setting.SettingFragment"
+        android:label="@string/text_setting"
+        tools:layout="@layout/fragment_setting" />
+</navigation>

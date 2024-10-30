@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">Dicoding Event : Final</string>
+    <string name="title_home">Home</string>
+    <string name="title_finish">Finished</string>
+    <string name="register">Register</string>
+    <string name="event_image">Event Image</string>
+    <string name="fav">favourite</string>
+    <string name="icon_event_placeholder">Icon Event</string>
+    <string name="title_favorite">Favorite</string>
+    <string name="text_setting">Setting</string>
+    <string name="text_dark_mode">Dark Mode</string>
+    <string name="text_daily_reminder">Daily Reminder</string>
+    <string name="text_author">by Rahmat Wahyuma Akbar | rahmatwahyumaakbar@gmail.com</string>
+</resources>
